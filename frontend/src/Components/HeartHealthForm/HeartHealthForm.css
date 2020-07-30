@@ -1,0 +1,64 @@
+body {
+    min-width: 320px;
+    text-align:center;
+    background-color: rgb(246, 227, 227);
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 200;
+    font-style: normal;
+  }
+
+#form-outer {
+  background-color:rgba(177, 171, 171, 0.493);
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 75%;
+  max-width: 900px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top:10px;
+}
+
+ .labels-input-fields {
+  display: inline-block;
+  text-align: left;
+  width:50%; 
+  vertical-align: middle;
+}
+
+#submit{
+  background-color: #4edf7e;
+  border-radius: 4px;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+
+@media screen and (max-width: 833px) {
+  /* select {
+    width: 90%;
+  } */
+}
+
+@media screen and (max-width: 520px) {
+  /* .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .labels-input-fields {
+    width: 80%;
+    float: left;
+  }
+  select {
+    width: 100%;
+  } */
+}
