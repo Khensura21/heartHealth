@@ -1,9 +1,7 @@
 import numpy as np
 import pandas as pd
-
 from joblib import dump
 from sklearn.linear_model import LogisticRegression
-
 
 if __name__ == "__main__":
     # Read data and split into instances and target
@@ -23,4 +21,4 @@ if __name__ == "__main__":
     rand_features = np.random.rand(1, 5) * 100
     print(f"Random Prediction: {clf.predict(rand_features)}")
 
-
+    print(f"Data Types: {instances.values[:, :5].dtype}")

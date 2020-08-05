@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 
 import './HeartHealthForm.css';
 
-
-
-
 class HeartHealthForm extends Component  {
     static defaultProps = {
         submitUserData(){}

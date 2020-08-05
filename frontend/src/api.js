@@ -1,7 +1,7 @@
-const APIURL = 'http://localhost:3000/api/processData'
+// import socketIOClient from "socket.io-client";
+const APIURL = 'http://localhost:3000/api/processData';
 
-
-export async function saveData(data) {
+export function saveData(data) {
     return fetch(APIURL, {
         method: 'POST',
         headers: new Headers({
