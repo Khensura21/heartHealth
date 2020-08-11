@@ -14,27 +14,22 @@ import * as apiCalls from './api';
 class App extends Component {
   constructor(props) {
     super(props);
-
+    this.state = {
+      heartPrediction: null
+    }
     this.submitUserData = this.submitUserData.bind(this)
   }
 
  
    async submitUserData(data) {
-    console.log(data);
-    const heartPrediction = await apiCalls.saveData(data);
-    console.log(heartPrediction);
-
-    //socket.io implementation attempt
-    // const socket = socketIOClient('http://localhost:3000/');
-    // socket.on('client_data', (data) => {
-    //   //console.log('hi');
-    //  // socket.emit('client_data', {message: 'hello world'})
-    //  console.log(data);
-    // })
-    // socket.disconnect()
+    const inference = await apiCalls.saveData(data);
+    this.setState({
+      heartPrediction: inference.heartPrediction
+    });
   }
 
   render() {
+    // this.state.heartPrediction == 1 ? alert("you should see a doctor") : alert("you're fine!");
     return (
       <div className="App">
         {/* <Navbar/> */}
